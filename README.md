@@ -8,13 +8,13 @@ This project is a web app that allows users to upload PDF documents, extract the
 3) Text Summarization: Generates concise summaries of the extracted text.
 4) Q&A Chatbot: Users can ask questions related to the PDF content and receive answers based on the document.
 # Technologies Used
-# Streamlit: 
+## Streamlit: 
    Used to build the web interface.
-# Hugging Face Transformers: 
+## Hugging Face Transformers: 
    Provides the models for summarization and question-answering tasks.
-# PyPDF2: 
+## PyPDF2: 
    Handles the text extraction from PDF files.
-# Python: 
+## Python: 
   The core programming language for the project.
   
 # Set up
@@ -24,19 +24,19 @@ run: python --version
 
 # Installation Steps
 
-# Clone the repository:
-git clone <repository_url>
-cd <repository_directory>
+## Clone the repository:
+     git clone <repository_url>
+     cd <repository_directory>
 
-# Create and activate a virtual environment:
-python -m venv venv
-venv\Scripts\activate
+## Create and activate a virtual environment:
+     python -m venv venv
+     venv\Scripts\activate
 
-# Install dependencies:
-pip install -r requirements.txt
+## Install dependencies:
+    pip install -r requirements.txt
 
-# Running the Application
-streamlit run app.py
+## Running the Application
+    streamlit run app.py
 
 # Interact with the app:
 
