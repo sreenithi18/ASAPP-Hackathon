@@ -1,58 +1,85 @@
-# ASAPP-Hackathon
-QA bot for Research Papers Given a knowledge base containing 100s of research papers, create a QA bot which when asked a question can reply with the right answer and cite the relevant research papers.
-# Researcher Hub 
-This project is a web app that allows users to upload PDF documents, extract the text, summarize it, and interact with a chatbot to get answers about the document's content. The system uses cutting-edge models for text summarization and question-answering to help users get quick insights from their PDFs.
-# Key Features
-1) Upload PDF: Users can upload PDF documents for text extraction.
-2) Text Extraction: The app extracts and cleans the text content from the uploaded PDFs.
-3) Text Summarization: Generates concise summaries of the extracted text.
-4) Q&A Chatbot: Users can ask questions related to the PDF content and receive answers based on the document.
-# Technologies Used
-## Streamlit: 
-   Used to build the web interface.
-## Hugging Face Transformers: 
-   Provides the models for summarization and question-answering tasks.
-## PyPDF2: 
-   Handles the text extraction from PDF files.
-## Python: 
-  The core programming language for the project.
-  
-# Set up
-# Prerequisites
-Ensure that Python 3.7 or above is installed. To check your Python version, 
-run: python --version
+# PDF Text Summarization and Q&A Chatbot
 
-# Installation Steps
+## Overview
 
-## Clone the repository:
-     git clone <repository_url>
-     cd <repository_directory>
+This project is a web application that enables users to upload PDF documents, extract and summarize their text content, and interact with a Q&A chatbot to get answers related to the document. The application leverages advanced models for text summarization and question-answering to provide valuable insights and answers.
 
-## Create and activate a virtual environment:
-     python -m venv venv
-     venv\Scripts\activate
+## Features
 
-## Install dependencies:
-    pip install -r requirements.txt
+- **PDF Upload**: Upload PDF files for processing.
+- **Text Extraction**: Extract and clean text from the uploaded PDF.
+- **Text Summarization**: Generate concise summaries of the extracted text.
+- **Q&A Chatbot**: Ask questions related to the PDF content and receive relevant answers.
+- **User-Friendly UI**: Clean and interactive interface with logo integration.
 
-## Running the Application
-    streamlit run app.py
+## Technologies
 
-# Interact with the app:
+- **Streamlit**: Framework for building the web application.
+- **Hugging Face Transformers**: For text summarization and question-answering models.
+- **PyPDF2**: For extracting text from PDF files.
+- **Python**: Programming language used for development.
 
-1) Upload a PDF: Use the "Upload a PDF file" button to upload your document.
+## Setup Instructions
 
-2) Summarize: After extraction, click the "Summarize" button to generate a concise summary of the document.
+### Prerequisites
 
-3) Ask Questions: Type a question in the text field to ask the Q&A chatbot, which will return answers based on the document's content.
+Ensure Python 3.7 or higher is installed. Check your Python version with:
 
-# Future Enhancements
-       Model Optimization for CPU
+## Installation
 
-       Multi-document Summarization and Q&A
+1. Clone the repository:
+````
+git clone <repository_url>
+cd <repository_directory>
+````
 
-       Multi-language Support
+2. Create a virtual environment (recommended):
+````
+python -m venv venv
+````
 
-       Collaboration and Sharing
+3. Activate the virtual environment:
+````
+venv\Scripts\activate
+````
 
-       Voice-Enabled Q&A
+4. Install the required packages:
+````
+pip install -r requirements.txt
+````
+
+## Configuration
+
+### 1. Update app.py:
+
+Make sure the path to the logo image and any other local paths are correctly set in the app.py file.
+
+### 2. Set up your models:
+
+Ensure that the models used in QA_chatbot.py are properly downloaded and accessible.
+
+## Usage
+
+### 1. Run the application:
+````
+streamlit run app.py
+````
+
+### 2. Interact with the application:
+
+Upload PDF: Click the "Upload a PDF file" button to upload your PDF document.
+Summarize: Click the "Summarize" button to get a summary of the extracted text.
+Ask Questions: Enter your question in the text input field to get answers based on the PDF content.
+
+### Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure your code adheres to the project’s coding standards and includes tests where applicable.
+
+### License
+
+This project is licensed under the MIT License. 
+### Acknowledgements
+
+Hugging Face: For providing powerful NLP models.
+Streamlit: For making it easy to build interactive web applications.
+
